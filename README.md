@@ -30,6 +30,13 @@
  -**CSS**: Styles and enhances the visual appearance of the web page.
  
  -**JS**: Adds interactivity and functionality to the website.
+
+ ### Key Insights:
+ -Skills
+
+ -Projects
+
+ -Contact details
  
  
  
