@@ -13,6 +13,8 @@
 ## Overview of the Project
 
 ### Project: Personal Portfolio Website
+![image](https://github.com/user-attachments/assets/6bbdc9e2-d160-466a-a0da-01c288407f01)
+
 
 ### Objective:
  The objective of a personal portfolio website is to showcase my professional identity, skills, and accomplishments in a visually appealing and organized manner.
