@@ -1,0 +1,169 @@
+/*html file*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Neha Maity</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>Hi! I am Neha Maity, a passionate web developer. I am proficient in C++, Java and Frontend Development.  I love building innovative projects and learning new skills.</p>
+    </section>
+    
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Frontend UI/UX of Flipkart</h3>
+          <p>I have made a simple responsive clone copying the UI/UX front-end design of Flipkart using HTML ,CSS AND 
+            JS . It shows the website’s front-end . The back-end is still under development and it has all the features like 
+            navigation bar , search bar etc .</p>
+        </div>
+        <div class="project">
+          <h3>Responsive Blogging Website</h3>
+          <p>It is a simple but Responsive blogging website made using HTML , CSS AND JS . The actual reason to create 
+            this was to create a news blogging website which will have the similar UI/UX front-end .</p>
+        </div>
+        <div class="project">
+          <h3>Big integer in C++</h3>
+          <p>In C/C++ the number of digits a long long int can have is a maximum of 20. And the question is to store the 22 
+            digit number which is not easy to store in any kind of primitive type. So to deal with this type of problem let’s 
+            design a new data type which is going to be called BigInt In this project.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">nehamaity093@gmail.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">+91 9832537369</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">https://in.linkedin.com/in/neha-maity-a334b6262</a></p>
+      <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">https://github.com/neha16112002</a></p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 Neha Maity. All rights reserved.</p>
+  </footer>
+  
+  <script src="portfolio.js"></script>
+</body>
+</html>
+/* CSS file */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+  }
+  
+ 
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  header .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header .nav-links a:hover {
+    color: #ff9a9e;
+  }
+  
+
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+  }
+  
+  .projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .projects .project {
+    background: #fff;
+    border: 2px solid #fad0c4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact {
+    background: #45dfd7;
+    color: #0e0101;
+    padding: 1.5rem;
+  }
+  
+  footer {
+    text-align: center;
+    background: #111111;
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+
+  @media (max-width: 768px) {
+    header .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  /*JS file*/
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+  
